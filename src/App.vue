@@ -60,16 +60,27 @@ export default {
 </script>
 
 <style>
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 
 .pokemon-header {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  background-color: rgba(255, 204, 0, 0.8);
+  padding: 20px;
+  border-bottom: 5px solid #ff0000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .pokemon-logo {
-  width: 100%; 
-  height: 100%;
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 
@@ -93,8 +104,14 @@ export default {
 }
 
 
-#app{
-  background-color: black;
+#app {
+  background: linear-gradient(to bottom, #ffcc00, #ff6699); 
+  font-family: 'Luckiest Guy', cursive; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  justify-content: center; 
 }
 
 .pokemon-subtitle {

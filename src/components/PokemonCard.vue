@@ -52,10 +52,21 @@
   .pokemon-image {
     width: 150px;
     height: 150px;
+    border-radius: 10px;
+    border: 2px solid #ffcc00;
   }
   
   .pokemon-card {
-    transition: transform 0.3s ease;
+    background-color: #ffffff;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .pokemon-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   }
   
   .pokemon-card.animate {
